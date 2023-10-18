@@ -1,0 +1,53 @@
+#app {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  --card-width: 200px;
+}
+.cards__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, var(--card-width));
+  grid-template-rows: repeat(2, var(--card-width));
+  border-radius: 100%;
+  border: 3px solid black;
+  width: max-content;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.red {
+  background-color: red;
+  border-radius: 100% 0 0 0;
+}
+.blue {
+  background-color: blue;
+  border-radius: 0 100% 0 0;
+}
+.green {
+  background-color: green;
+  border-radius: 0 0 0 100%;
+}
+.yellow {
+  background-color: #ffff23;
+  border-radius: 0 0 100% 0;
+}
+.red.flash {
+  background-color: #ff000096;
+}
+.blue.flash {
+  background-color: #0000ffa1;
+}
+.green.flash {
+  background-color: #008000a3;
+}
+.yellow.flash {
+  background-color: #cccc00a8;
+}
+.card.flash {
+  border: 3px solid white;
+}
